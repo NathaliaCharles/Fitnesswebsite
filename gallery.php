@@ -41,34 +41,34 @@ session_start();
     <div id="container">
 
         <div class="image">
-            <img src="imgs/gallery/img1.jpg" alt="">
+            <img src="imgs/img1.jpg" alt="">
         </div>
         <div class="image">
-            <img src="imgs/gallery/img2.jpg" alt="">
+            <img src="imgs/img2.jpg" alt="">
         </div>
         <div class="image">
-            <img src="imgs/gallery/img3.jpg" alt="">
+            <img src="imgs/img3.jpg" alt="">
         </div>
         <div class="image">
-            <img src="imgs/gallery/img4.jpg" alt="">
+            <img src="imgs/img4.jpg" alt="">
         </div>
         <div class="image">
-            <img src="imgs/gallery/img5.jpg" alt="">
+            <img src="imgs/img5.jpg" alt="">
         </div>
         <div class="image">
-            <img src="imgs/gallery/img6.jpg" alt="">
+            <img src="imgs/img6.jpg" alt="">
         </div>
         <div class="image">
-            <img src="imgs/gallery/img7.jpg" alt="">
+            <img src="imgs/img7.jpg" alt="">
         </div>
         <div class="image">
-            <img src="imgs/gallery/img8.jpg" alt="">
+            <img src="imgs/img8.jpg" alt="">
         </div>
         <div class="image">
-            <img src="imgs/gallery/img9.jpg" alt="">
+            <img src="imgs/img9.jpg" alt="">
         </div>
         <div class="image">
-            <img src="imgs/gallery/img10.jpg" alt="">
+            <img src="imgs/img10.jpg" alt="">
         </div>
 
     </div>
