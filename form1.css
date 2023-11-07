@@ -104,20 +104,20 @@ input[type="submit"]:hover{
 	transition: .5s;
 }
 
-.signup_link{
+.register_link{
 	margin: 30px 0;
 	text-align: center;
 	font-size: 16px;
 	color: #666666;
 }
 
-.signup_link a{
+.register_link a{
 	color: #Fd0000;
 	text-decoration: none;
 	padding-left: 5px;
 }
 
-.signup_link a:hover{
+.register_link a:hover{
 	text-decoration: underline;
 }
 
