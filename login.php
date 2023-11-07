@@ -5,7 +5,7 @@ session_start();
 // check if the user is already logged in
 if(isset($_SESSION['username']))
 {
-    header("location: profile.php");
+    header("location: index.php");
     exit;
 }
 require_once "config.php";
@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST"){
 
 if(empty($err))
 {
-    $sql = "SELECT id, username, password, email, phone FROM users WHERE username = ?";
+    $sql = "SELECT username, password FROM users WHERE username = ?";
     $stmt = mysqli_prepare($conn, $sql);
     mysqli_stmt_bind_param($stmt, "s", $param_username);
     $param_username = $username;
@@ -38,21 +38,18 @@ if(empty($err))
         mysqli_stmt_store_result($stmt);
         if(mysqli_stmt_num_rows($stmt) == 1)
                 {
-                    mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password, $email, $phone);
+                    mysqli_stmt_bind_result($stmt, $username, $password);
                     if(mysqli_stmt_fetch($stmt))
                     {
-                        if(password_verify($password, $hashed_password))
+                        if(password_verify($password, $password))
                         {
                             // this means the password is correct. Allow user to login
                             session_start();
                             $_SESSION["username"] = $username;
-                            $_SESSION["id"] = $id;
                             $_SESSION["loggedin"] = true;
-                            $_SESSION["email"] = $email;
-                            $_SESSION["phone"] = $phone;
-
+				
                             //Redirect user to welcome page
-                            header("location: profile.php");
+                            header("location: index.php");
                             
                         }
                     }
@@ -68,12 +65,11 @@ if(empty($err))
 
 ?>
 
-<!DOCTYPE HTML>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Fitness Login </title>
-	<link rel="stylesheet" type="text/css" href="css/form1.css">
+	<link rel="stylesheet" type="text/css" href="form1.css">
 </head>
 <body>
 	<img src="imgs/workout3.jpg">
@@ -91,9 +87,9 @@ if(empty($err))
 				<label>Password</label>
 			</div>
 			<div class="pass">Forget Password?</div>
-			<input type="submit" value="Login" href="index.html">
-			<div class="signup_link">
-				Not a Member?<a href="signup.php">Signup</a>
+			<input type="submit" value="Login" href="index.php">
+			<div class="register_link">
+				Not a Member?<a href="register.php">Register</a>
 			</div>
 		</form>
 	</div>
