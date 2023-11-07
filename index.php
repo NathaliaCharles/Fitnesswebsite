@@ -107,7 +107,7 @@ session_start();
 	</section>
 	<section class="Section">
 		<div class="left">
-			<img src="imgs/workout.jpg">
+			<img src="imgs/workout.jpeg">
 		</div>
 		<div class="right">
 			<p class="text-big"><em>"Each new day is a new opportunity to improve yourself. Take it and make the most of it."</em></p>
@@ -115,7 +115,7 @@ session_start();
 	</section>
 	<section class="Section reverse">
 		<div class="left">
-			<img src="imgs/workout1.jpg">
+			<img src="imgs/workout1.jpeg">
 		</div>
 		<div class="right">
 			<p class="text-big"><em>"Peanut Butter Whole-Wheat Sandwich:30 minutes befor workout have 2 slices of bread with 2 spoons"</em></p>
