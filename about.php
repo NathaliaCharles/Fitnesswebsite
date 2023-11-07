@@ -12,12 +12,12 @@ session_start();
 <html>
 <head>
 	<title>RightNow Fitness</title>
-	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="imgs/about.css">
 
 </head>
 <body>
 	<header class="navbar">
-		<img class="logo" src="imgs/gym-pic.png">
+		<img class="logo" src="gym-pic.png">
 		<span>RightNow Fitness</span>
 		<nav>
 			<ul class="navlist">
@@ -27,7 +27,7 @@ session_start();
 				<li><a href="contact.php">Contact Us</a></li>
 				<?php
             		if(isset($_SESSION['username'])){
-                	echo '<li><a href="profile.php">'.$_SESSION['username'].'</a></li>';
+                	echo '<li><a href="login.php">'.$_SESSION['username'].'</a></li>';
                 	echo '<li><a href="logout.php">Logout</a></li>';
             		}
             		else{
@@ -41,7 +41,7 @@ session_start();
 	<section id="about">
 
 		<div id="heading">
-			<img src="imgs/gym-pic.png" alt="">
+			<img src="gym-pic.png" alt="">
 			
 		</div>
 		<span class="heading">RightNow Fitness</span>
