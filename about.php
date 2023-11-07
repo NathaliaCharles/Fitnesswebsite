@@ -12,7 +12,7 @@ session_start();
 <html>
 <head>
 	<title>RightNow Fitness</title>
-	<link rel="stylesheet" href="imgs/about.css">
+	<link rel="stylesheet" href="about.css">
 
 </head>
 <body>
