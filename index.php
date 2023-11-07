@@ -63,12 +63,12 @@ session_start();
 <html>
 <head>
 	<title>RightNow Fitness</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 	<header class="navbar">
-		<img class="logo" src="imgs/gym-pic.png">
+		<img class="logo" src="gym-pic.png">
 		<span>RightNow Fitness</span>
 		<nav>
 			<ul class="navlist">
@@ -78,7 +78,7 @@ session_start();
 				<li><a href="contact.php">Contact Us</a></li>
 				<?php
             		if(isset($_SESSION['username'])){
-                	echo '<li><a href="profile.php">'.$_SESSION['username'].'</a></li>';
+                	echo '<li><a href="login.php">'.$_SESSION['username'].'</a></li>';
                 	echo '<li><a href="logout.php">Logout</a></li>';
             		}
             		else{
@@ -96,14 +96,11 @@ session_start();
 				<div>
 					<?php
 					if(isset($_SESSION['loggedin'])){
-						echo '<button class="btn"><a href="services.php">JOIN NOW</a> </button>';
-					}
-					else
-					{
-						echo '<button class="btn"><a href="signup.php">Become a Member</a> </button>';
+				
+						echo '<button class="btn"><a href="register.php">Become a Member</a> </button>';
 					}
 					?>
-					<!--<button class="btn"><a href="signup.php">Become a Member</a> </button>-->
+					<!--<button class="btn"><a href="register.php">Become a Member</a> </button>-->
 				</div>
 			</div>
 		</div>
@@ -131,11 +128,6 @@ session_start();
 		<div class="right">
 			<p class="text-big"><em>"Your body is a reflection of your lifestyle."</em></p>
 		</div>
-	</section>
-	<section class="services">
-		<div></div>
-		<div></div>
-		<div></div>
 	</section>
 	<section id="contact">
 		<h1 class="text-center">Your Feedback</h1>
