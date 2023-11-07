@@ -61,13 +61,13 @@ session_start();
 <head>
     <title>RightNow Fitness</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="contact.css">
     
 
 </head>
 <body>
 	<header class="navbar">
-		<img class="logo" src="imgs/gym-pic.png">
+		<img class="logo" src="gym-pic.png">
 		<span>RightNow Fitness</span>
 		<nav>
 			<ul class="navlist">
@@ -77,7 +77,7 @@ session_start();
 				<li><a href="contact.php" class="active">Contact Us</a></li>
         <?php
                 if(isset($_SESSION['username'])){
-                  echo '<li><a href="profile.php">'.$_SESSION['username'].'</a></li>';
+                  echo '<li><a href="login.php">'.$_SESSION['username'].'</a></li>';
                   echo '<li><a href="logout.php">Logout</a></li>';
                 }
                 else{
