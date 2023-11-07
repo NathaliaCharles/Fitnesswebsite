@@ -12,7 +12,7 @@ body::before {
   z-index: -1;
   position: absolute;
   top: 0px;
-  background: url('../imgs/reg-form.jpg') no-repeat ;
+  background: url('../reg-form.jpg') no-repeat ;
   background-size: cover;
   background-attachment: scroll;
  
@@ -61,43 +61,6 @@ height: 80px;
   width: 120px;
 }
 
-.firstname{
-
-  position: relative;
-  left: 200px;
-  top: -35px;
-  line-height: 40px;
-  border-radius: 6px;
-  
-  font-size: 16px;
-}
-.lastname{
-  
-  position: relative;
-  left: 400px;
-  top: -80px;
-  line-height: 40px;
-  border-radius: 6px;
-  
-  font-size: 16px;
-}
-
-.firstlabel{
-  position: relative;
-  color: red;
-  left: 200px;
-  top: -49px;
-
-}
-.lastlabel{
-  position: relative;
-  color: red;
-  left: 482px;
-  top: -81px;
-
-}
-
-
 
 .phone-no{
 
@@ -140,40 +103,6 @@ height: 80px;
   position: relative;
   left: 200px;
   top: -30px;
-  line-height: 40px;
-  width: 200px;
-  border-radius: 6px;
-  font-size: 16px;
-}
-
-
-.height{
-
-  position: relative;
-  left: 200px;
-  top: -30px;
-  line-height: 40px;
-  width: 200px;
-  border-radius: 6px;
-  font-size: 16px;
-}
-
-.weight{
-
-  position: relative;
-  left: 200px;
-  top: -30px;
-  line-height: 40px;
-  width: 200px;
-  border-radius: 6px;
-  font-size: 16px;
-}
-
-#F-goal{
-
-  position: relative;
-  left: 200px;
-  top: -40px;
   line-height: 40px;
   width: 200px;
   border-radius: 6px;
