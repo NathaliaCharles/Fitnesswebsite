@@ -109,7 +109,7 @@ else{
 
 
 // If there were no errors, go ahead and insert into the database
-if(empty($name_err) && (empty($username_err) && empty($password_err) && empty($confirm_password_err) && empty($email_err) && empty($phone_err))
+if(empty($name_err) && empty($username_err) && empty($password_err) && empty($confirm_password_err) && empty($email_err) && empty($phone_err))
 {
     $sql = "INSERT INTO users (name, username, password, email, phone) VALUES (?, ?, ?, ?, ?)";
     $stmt = mysqli_prepare($conn, $sql);
@@ -133,7 +133,7 @@ if(empty($name_err) && (empty($username_err) && empty($password_err) && empty($c
         }
     }
     mysqli_stmt_close($stmt);
-
+}
 mysqli_close($conn);
 
 ?>
@@ -144,7 +144,7 @@ mysqli_close($conn);
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Register </title>
-        <link rel="stylesheet" href="css/register.css">
+        <link rel="stylesheet" href="register.css">
         
     </head>
     <body>
